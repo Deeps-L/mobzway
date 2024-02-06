@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node example</title>
+</head>
+<body>
+    <script>
+        var http = require('http');
+// const { type } = require('os');
+// const { text } = require('stream/consumers');
+
+http.createServer(function(req,res){
+    res.writeHead(200,{'Content-Type': 'text/plain'});
+    res.end('This is first project of Node');
+}).listen(3000);
+    </script>
+</body>
+</html>
